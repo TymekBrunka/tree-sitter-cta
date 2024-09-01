@@ -3,7 +3,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/Documents/tree-sitter-cta
+cd ~/.config/nvim
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -13,16 +13,14 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +6 example.cta
-badd +17 grammar.js
-badd +1 README.md
-badd +66 package.json
-badd +6 ~/Documents/tree-sitter-cta/queries/highlights.scm
+badd +11 after/plugin/c3-lsp.lua
+badd +36 after/plugin/lsp.lua
+badd +7 ~/Pobrane/c3-linux/linux/struct.c3
 argglobal
 %argdel
-edit example.cta
+edit ~/Pobrane/c3-linux/linux/struct.c3
+tcd ~/Documents/tree-sitter-cta/queries
 argglobal
-balt ~/Documents/tree-sitter-cta/queries/highlights.scm
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -33,11 +31,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 6 - ((5 * winheight(0) + 28) / 56)
+let s:l = 7 - ((6 * winheight(0) + 28) / 56)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 6
+keepjumps 7
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
@@ -52,7 +50,6 @@ if filereadable(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
 set hlsearch
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
