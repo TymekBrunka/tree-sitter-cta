@@ -1,11 +1,159 @@
 [
   {
-    "type": "source_file",
+    "type": "heading_l1",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "hello",
+    "type": "heading_l2",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "heading_l3",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "heading_l4",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "heading_l5",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "heading_l6",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "heading_l1",
+          "named": true
+        },
+        {
+          "type": "heading_l2",
+          "named": true
+        },
+        {
+          "type": "heading_l3",
+          "named": true
+        },
+        {
+          "type": "heading_l4",
+          "named": true
+        },
+        {
+          "type": "heading_l5",
+          "named": true
+        },
+        {
+          "type": "heading_l6",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
     "named": false
+  },
+  {
+    "type": "= ",
+    "named": false
+  },
+  {
+    "type": "== ",
+    "named": false
+  },
+  {
+    "type": "=== ",
+    "named": false
+  },
+  {
+    "type": "==== ",
+    "named": false
+  },
+  {
+    "type": "===== ",
+    "named": false
+  },
+  {
+    "type": "====== ",
+    "named": false
+  },
+  {
+    "type": "word",
+    "named": true
   }
 ]
